@@ -1,10 +1,11 @@
-#home {
-    display: flex;
-    align-items: flex-end;
-}
 
 .buttons {
     display: flex;
     flex-direction: column;
     gap: 6px;
+
+}
+
+.buttons a {
+    text-decoration: none;
 }

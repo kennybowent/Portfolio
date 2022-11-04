@@ -1,0 +1,8 @@
+html {
+    background: linear-gradient(110deg, #fffbf0 60%, #943d24 60%);
+    background-color: #282612;
+    height: 100%
+}
+body {
+    font-family: 'Montserrat', sans-serif;
+}

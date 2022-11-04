@@ -1,0 +1,93 @@
+html {
+    height: 100%
+}
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.buttons {
+    position: relative;
+    display: flex;
+    float: right;
+    flex-direction: column;
+    right: 30px;
+    gap: 8px;
+}
+
+#resume {
+    position: relative;
+    top: -1px;
+}
+
+.buttons a {
+    width: 50px;
+    text-decoration: none;
+    color: black;
+}
+
+.line {
+    position: relative;
+    height: 1px;
+    background: black;
+    transform: rotate(90deg);
+    width: 500px;
+    margin-top: -40px;
+    left: 692px;
+    padding: 0
+}
+
+section h1 {
+    text-align: center;
+}
+
+div {
+    position: relative;
+    top: 60px;
+    width: 900px;
+    left: 40px;
+}
+
+div h2 {
+    position: relative;
+    font-size: 17px;
+}
+
+div p {
+    position: relative;
+    font-size: 13px;
+}
+
+#emptyimage {
+    position: relative;
+    height: 250px;
+    width: 500px;
+    left: 440px;
+    top: 100px;
+}
+
+#stats {
+    position: relative;
+    top: -150px;
+    width: 100px;
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+}
+
+#github, #linkedin {
+    height: 35px;
+}
+
+footer {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+    bottom: 140px;
+    float: right;
+    right: 27px;
+}
+
+footer a {
+    text-decoration: none;
+}

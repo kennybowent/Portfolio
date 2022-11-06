@@ -11,29 +11,16 @@ body {
     float: right;
     flex-direction: column;
     right: 30px;
-    gap: 8px;
+    gap: 9px;
+    border-left: 2px solid black;
+    padding-left: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
-
-#resume {
-    position: relative;
-    top: -1px;
-}
-
 .buttons a {
     width: 50px;
     text-decoration: none;
     color: black;
-}
-
-.line {
-    position: relative;
-    height: 1px;
-    background: black;
-    transform: rotate(90deg);
-    width: 500px;
-    margin-top: -40px;
-    left: 692px;
-    padding: 0
 }
 
 section h1 {
@@ -57,22 +44,17 @@ div p {
     font-size: 13px;
 }
 
-#emptyimage {
+/* #emptyimage {
     position: relative;
     height: 250px;
     width: 500px;
     left: 440px;
     top: 100px;
-}
+} */
 
-#stats {
-    position: relative;
-    top: -150px;
-    width: 100px;
-    padding: 0px;
-    margin: 0px;
-    border: 0px;
-}
+/* #stats {
+
+} */
 
 #github, #linkedin {
     height: 35px;

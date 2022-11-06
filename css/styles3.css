@@ -1,8 +1,47 @@
 html {
-    background: linear-gradient(110deg, #fffbf0 60%, #943d24 60%);
-    background-color: #282612;
     height: 100%
 }
 body {
     font-family: 'Montserrat', sans-serif;
 }
+
+section {
+    position: absolute;
+    text-align: center;
+}
+
+ul {
+    display: flex;
+    flex-direction: column;
+    padding: 0px;
+    gap: 30px;
+}
+
+#emptyimage {
+    height: 100px;
+    width: 200px;
+}
+
+
+.buttons {
+    position: relative;
+    display: flex;
+    float: right;
+    flex-direction: column;
+    right: 30px;
+    gap: 9px;
+    border-left: 2px solid black;
+    padding-left: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.buttons a {
+    width: 50px;
+    text-decoration: none;
+    color: black;
+}
+
+/* #github, #linkedin {
+    height: 35px;
+    float: right;
+} */

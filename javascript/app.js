@@ -10,7 +10,7 @@ let button = document.getElementById('button');
 let close = document.getElementsByClassName('close')[0];
 
 // Open modal when clicked
-button.onclick = function () {
+button.onclick = () => {
 	modal.style.display = 'block';
 };
 
@@ -25,3 +25,8 @@ window.onclick = function (event) {
 		modal.style.display = 'none';
 	}
 };
+
+function showAlert() {
+	alert("Hello world!");
+}
+showAlert()

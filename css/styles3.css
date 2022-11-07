@@ -1,39 +1,48 @@
-html {
-    height: 100%
-}
+
 body {
     font-family: 'Montserrat', sans-serif;
 }
 
+.title {
+    text-align: center;
+    font-size: 60px;
+}
+
 section {
-    position: absolute;
+    position: relative;
     text-align: center;
 }
 
-ul {
-    display: flex;
-    flex-direction: column;
-    padding: 0px;
-    gap: 30px;
+h2 {
+    margin-bottom: 5px;
 }
 
 #emptyimage {
-    height: 100px;
-    width: 200px;
+    height: 150px;
+    width: 250px;
 }
 
+p {
+    margin-top: 0px;
+    margin-bottom: 60px;
+    font-size: 24px;
+}
 
 .buttons {
-    position: relative;
+    position: fixed;
     display: flex;
     float: right;
     flex-direction: column;
-    right: 30px;
+    right: 90px;
     gap: 9px;
-    border-left: 2px solid black;
-    padding-left: 20px;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    border-left: 3px solid black;
+    padding-left: 25px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-size: 22px;
+    top: 30px;
+    margin: 0;
+    z-index: 1;
 }
 .buttons a {
     width: 50px;
@@ -41,7 +50,34 @@ ul {
     color: black;
 }
 
-/* #github, #linkedin {
-    height: 35px;
+#github,
+#linkedin {
+    height: 50px;
     float: right;
-} */
+}
+
+footer {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    gap: 12px;
+    right: 20px;
+    bottom: 20px;
+}
+
+@media screen and (max-width: 630px) {
+    .buttons {
+        position: relative;
+        display: inline-block;
+        top: -15px;
+        left: 0px;
+        width: fit-content;
+        border: 2px solid black;
+        padding: 10px;
+    }
+    #github,
+    #linkedin {
+        height: 35px;
+    }
+}

@@ -6,7 +6,61 @@ body {
 }
 
 section {
+    text-align:center;
+    font-size: 40px;
+}
+
+section h2 {
+    margin-bottom: 0;
+}
+
+.email {
+    color: black;
+}
+
+div {
+    display: flex;
+    flex-direction: column;
+}
+
+nav {
+    display: flex;
+    font-size: 30px;
+    justify-content: center;
+    gap: 30px;
+}
+
+div h1 {
     text-align: center;
+    font-size: 30px;
+}
+
+div {
+    text-align: center;
+    list-style: none;
+    font-size: 20px;
+}
+
+li {
+    padding: 5px;
+    list-style: none;
+    text-align: center;
+}
+
+.experience {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-size: 22px;
+    gap: 30px;
+}
+
+.education {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-size: 22px;
+    gap: 100px;
 }
 
 .buttons {
@@ -14,15 +68,84 @@ section {
     display: flex;
     float: right;
     flex-direction: column;
-    right: 30px;
+    right: 90px;
     gap: 9px;
-    border-left: 2px solid black;
-    padding-left: 20px;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    border-left: 3px solid black;
+    padding-left: 25px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-size: 22px;
+    top: 30px;
+    margin: 0;
+    z-index: 1;
 }
+
 .buttons a {
     width: 50px;
     text-decoration: none;
     color: black;
+}
+
+
+#github,
+#linkedin {
+    height: 50px;
+    float: right;
+}
+#cv {
+    position: relative;
+    height: 60px;
+    float: right;
+    right: 10px;
+}
+
+
+footer {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    gap: 12px;
+    right: 20px;
+    bottom: 20px;
+}
+
+@media screen and (max-width: 1550px) {
+    footer {
+        position: relative;
+        flex-direction: row;
+        left: 15px;
+    }
+}
+@media screen and (max-width: 1260px) {
+    .buttons {
+        position: relative;
+        display: block;
+        top: 10px;
+        right: 110px;
+        width: fit-content;
+        border: 2px solid black;
+        padding-right: 25px;
+    }
+}
+@media screen and (max-width: 869px) {
+    section nav {
+        flex-direction: column;
+        gap: 0px;
+    }
+    .buttons {
+        float: left;
+        left: 15px;
+        padding: 10px;
+        margin-bottom: 10px;
+    }
+    .education {
+        font-size: smaller;
+        gap: 0px;
+    }
+}
+@media screen and (max-width: 400px) {
+    .email {
+        font-size: smaller;
+    }
 }

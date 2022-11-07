@@ -10,12 +10,13 @@ body {
     display: flex;
     float: right;
     flex-direction: column;
-    right: 30px;
+    right: 90px;
     gap: 9px;
-    border-left: 2px solid black;
-    padding-left: 20px;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    border-left: 3px solid black;
+    padding-left: 25px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-size: 22px;
 }
 .buttons a {
     width: 50px;
@@ -25,51 +26,182 @@ body {
 
 section h1 {
     text-align: center;
+    font-size: 60px;
+}
+
+section div {
+    position: relative;
+    top: 60px;
+}
+
+ol {
+    padding-left: 0px;
+    font-size: 20px;
+    text-align: center;
 }
 
 div {
     position: relative;
-    top: 60px;
+    top: 50px;
+    left: 50px;
     width: 900px;
-    left: 40px;
+    padding-left: 15px;
+    font-size: 20px;
 }
 
-div h2 {
-    position: relative;
-    font-size: 17px;
+.stats h3 {
+    display: flex;
+    gap: 20px;
+    margin: 0px;
+    width: 100%;
 }
 
-div p {
+.stats p {
     position: relative;
-    font-size: 13px;
+    top: -25px;
+    font-size: 20px;
+    opacity: 0;
+    width: 600px;
 }
 
-/* #emptyimage {
+#skillsicon, #interestsicon, #passionsicon{
     position: relative;
-    height: 250px;
-    width: 500px;
-    left: 440px;
-    top: 100px;
-} */
+    top: -5px;
+    height: 40px;
+    opacity: 0;
+}
 
-/* #stats {
-
-} */
+#skills:hover .myskills, #interests:hover .myinterests, #passions:hover .mypassions {
+    opacity: 1;
+}
 
 #github, #linkedin {
-    height: 35px;
+    height: 50px;
+    float: right;
 }
 
 footer {
-    position: relative;
+    position: absolute;
     display: flex;
     flex-direction: column;
-    gap: 9px;
-    bottom: 140px;
-    float: right;
-    right: 27px;
+    align-items: baseline;
+    gap: 12px;
+    right: 20px;
+    bottom: 20px;
 }
 
-footer a {
+#button {
+    float: left;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: fit-content;
+}
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+.close:hover,
+.close:focus {
+    color: black;
     text-decoration: none;
+    cursor: pointer;
+}
+#goggles, #miso, #coco, #kleoandcoco{
+    width: 300px;
+}
+.text {
+    color: black;
+    font-size: 25px;
+    position: absolute;
+    bottom: 8px;
+    width: 800px;
+    text-align: right;
+}
+.kleotext {
+    color: black;
+    font-size: 25px;
+    position: relative;
+    width: 800px;
+    text-align: right;
+    top: -550px;
+
+}
+
+@media screen and (max-width: 1780px) {
+    .buttons {
+            position: relative;
+            display: block;
+            top: 10px;
+            right: 110px;
+            width: fit-content;
+            border: 2px solid black;
+            padding-right: 25px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    #github,
+    #linkedin {
+        height: 50px;
+        float: left;
+    }
+    footer {
+        position: absolute;
+        align-items: baseline;
+        gap: 12px;
+        left: 20px;
+        bottom: 20px;
+    }
+    .stats p {
+        opacity: 1;
+    }
+    #skillsicon,
+    #interestsicon,
+    #passionsicon {
+        position: relative;
+        top: -5px;
+        height: 40px;
+        display: none;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .buttons {
+        float: left;
+        left: 15px;
+        padding: 10px;
+        margin-bottom: 20px;
+    }
+    .totalstats, #button {
+        display: none;
+    }
+    footer {
+        position: relative;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    footer {
+        position: relative;
+    }
 }
